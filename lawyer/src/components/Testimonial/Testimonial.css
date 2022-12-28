@@ -1,0 +1,135 @@
+.app__testimonial{
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F2F7FF;
+}
+
+.app__testimonial-title{
+    font-family: var(--font-base);
+    color: var(--color-dark-gray);
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.testimonial__testimonials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.testimonials__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 1rem;
+    max-width: 700px;
+    align-self: stretch;
+}
+.card__text{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: 100%;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
+.card__text:before{
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -15px;
+    position: absolute;
+    border-right: 18px solid transparent;
+    border-top: 26px solid #fff;
+    border-left: 18px solid transparent
+}
+
+.card__text-title{
+    font-family: var(--font-popins);
+    color: var(--color-dark-gray);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+
+}
+
+.card__text-description{
+    font-family: var(--font-popins);
+    font-weight: 400;
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 1rem;
+}
+
+.card__person{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.card__person-avatar{
+    width: 56px;
+    height: 56px;
+}
+
+.card__person-text__container{
+    display: flex;
+    margin-left:1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__person-name{
+    font-family: var(--font-popins);
+    color: var(--color-dark-gray);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.card__person-position{
+    font-family: var(--font-alt);
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1050px){
+    .app__testimonial{
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width:750px){
+    .testimonial__testimonials{
+        flex-direction: column;
+    }
+
+    .testimonials__card:nth-child(2){
+        margin-top: 5rem;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .app__testimonial{
+        padding: 2rem 1rem;
+    }
+}

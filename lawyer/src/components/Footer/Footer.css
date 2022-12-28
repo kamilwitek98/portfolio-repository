@@ -1,0 +1,135 @@
+.app__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__mainfooter{
+    padding: var(--padding-section);
+    background: var(--color-navy);
+    display: flex;
+}
+
+.mainfooter__logo{
+    display: flex;
+    font-family: var(--font-popins);
+    flex: 1;
+}
+
+.mainfooter__logo-letter{
+    height: 54px;
+    width: 54px;
+    background: #fff;
+    color: var(--color-navy);
+    border-radius: 50%;
+    line-height: 54px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mainfooter__logo-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 54px;
+    color: #fff;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.mainfooter__links{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mainfooter__links-wrapper{
+    padding: 0 1rem;
+}
+
+.mainfooter__links-title{
+    font-family: var(--font-popins);
+    color: #fff;
+    font-weight:500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.mainfooter__links-link{
+    font-family: var(--font-popins);
+    color: #EEEFF4;
+    font-weight:100;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0.7rem;
+}
+
+.footer__subfooter{
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004D7B;
+}
+
+.subfooter__text{
+    color: #D9DBE1;
+    font-family: var(--font-popins);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.subfooter__socials{
+    display: flex;
+}
+
+.subfooter__socials > svg {
+    margin-left: 1rem;
+    background: #015c91;
+    border-radius: 50%;
+    padding: 0.3rem;
+    border: none;
+
+}
+
+@media screen and (max-width: 750px){
+    .footer__mainfooter{
+        flex-direction: column;
+        padding: 4rem 3rem;
+    }
+
+    .footer__subfooter{
+        padding: 1rem 3rem;
+    }
+
+    .mainfooter__logo{
+        justify-content: center;
+    }
+
+    .mainfooter__links{
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mainfooter__links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__subfooter{
+        padding: 1rem 1rem;
+    }
+
+    .mainfooter__links-title{
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mainfooter__links-link{
+        margin-bottom:0.1rem;
+    }
+}

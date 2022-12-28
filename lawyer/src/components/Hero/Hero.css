@@ -1,0 +1,242 @@
+.app__hero{
+    padding: 4rem 6rem 0 6rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.app__hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.content__connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: #E7F6FF;
+    border-radius: 50px;
+}
+
+.connect__button{
+    background-color: var(--color-navy);
+    color: #fff;
+    height: 28px;
+    width: 86px;
+    border-radius: 2rem;
+    border: none;
+    font-family: var(--font-popins);
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.connect__alt{
+    font-size: 14px;
+    line-height: 36px;
+    color: #193E6C;
+    font-family: var(--font-popins);
+    padding: 0 1rem;
+}
+
+.content__heading {
+    margin-top: 2rem;
+    font-family: var(--font-base);
+    font-size: 90px;
+    line-height: 108px;
+    font-weight: 700;
+    color: var(--color-navy);
+}
+
+.content__alt{
+    font-family: var(--font-alt);
+    color: var(--color-gray);
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.content__button{
+    font-family: var(--font-popins);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    background-color: var(--color-navy);
+    border:none;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+    padding: 2rem 3rem; 
+    margin-top: 3rem;   
+    cursor: pointer;
+}
+
+.connect__media{
+    padding: 3rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.media__alt{
+    color: var(--color-light-gray);
+    font-family: var(--font-alt);
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.media__logos{
+    width: 238px;
+}
+
+.hero__person {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero__person > img {
+    width: fit-content;
+    max-height: 900px;
+}
+
+.person__description{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 39px 100px rgba(25, 62, 108, 0.12));
+    background: #fff;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    max-width: 500px;
+}
+
+.person__description-name{
+    font-family: var(--font-alt);
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-navy);
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+.person__description-alt{
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-light-gray);
+}
+
+@media screen and (min-width: 1800px){
+    .app__hero{
+        background-size: 50vw;
+    }
+}
+
+@media screen and (max-width: 1155px){
+    .app__hero{
+        background-position: bottom 40px right;
+        background-size: 100vh;
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    .app__hero-container{
+        flex-direction: column;
+    }
+
+    .connect__media{
+        align-items: center;
+    }
+
+    .hero__content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__person{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__hero{
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .content__heading {
+        font-size: 60px;
+        line-height: 82px;
+        
+    }
+
+    .hero__person > img {
+        width: 80%;
+        max-height: fit-content;
+    }
+
+    .content__connect{
+        height: auto;
+
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content__heading {
+        font-size: 42px;
+        line-height: 56px;
+        
+    }
+
+    .content__alt{
+        font-size: 20px;
+        line-height: 34px;
+    }
+    
+    .connect__alt{
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+    .content__button{
+        padding: 1rem 2rem;
+    }
+
+    
+}
+
+
+    
+
+
+

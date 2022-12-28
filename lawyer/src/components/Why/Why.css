@@ -1,0 +1,116 @@
+.app__why{
+    background: #F2F7FF;
+    margin-top: -2rem;
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.why__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.why__title-text{
+    font-family: var(--font-base);
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 64px;
+    color: var(--color-dark-gray);
+    max-width: 400px;
+}
+
+.why__title-alt{
+    max-width: 400px;
+    font-family: var(--font-popins);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: var(--color-light-gray);
+    margin-top: 2rem;
+}
+
+.why__feature{
+    
+    display: flex;
+}
+.why__feature-container{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature__element{
+    width: 256px;
+    height: 256px;
+    background: #fff;
+    padding: 1.5rem;
+    margin: 2rem 0 0 2rem;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.feature__element-icon{
+    width: 37px;
+    height: 37px;
+}
+
+.feature__element-title{
+    margin-top: 1rem;
+    font-family: var(--font-base);
+    font-weight: 700;
+    size: 22px;
+    line-height: 22px;
+    color: var(--color-dark-gray);
+}
+
+.feature__element-text{
+    margin-top: 1rem;
+    font-family: var(--font-alt);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-light-gray);
+}
+
+@media screen and (max-width: 1155px){
+    .app__why{
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 3rem 2rem 3rem;
+    }
+
+    .why__title{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .feature__element{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .why__feature-container{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature__element{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .feature__element{
+        width: 100%;      
+    }
+}
