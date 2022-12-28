@@ -1,0 +1,27 @@
+.control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.control p{
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.drum_machine-switch_power{
+    width: 54px;
+    padding: 0.2rem;
+    background-color: black;
+    display: flex;
+}
+
+.switch-power_button{
+    width: 23px;
+    height: 19px;
+    background-color: blue;
+}
