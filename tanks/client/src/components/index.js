@@ -1,0 +1,5 @@
+export { default as Form } from './Form/Form'
+export { default as Tanks } from './Tanks/Tanks'
+export { default as Homepage } from './Homepage/Homepage'
+export { default as Auth } from './Auth/Auth'
+export { default as Navbar } from './Navbar/Navbar'

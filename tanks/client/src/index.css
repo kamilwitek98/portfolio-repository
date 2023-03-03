@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+    background-color: #FFFFFA;
+    min-height: 100vh;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.myContainer{
+  padding: 2rem 4rem;
+  max-width: 1900px;
+  width: 100%;
+  display: flex;
+}
+
+.outContainer{ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .myContainer{
+    padding: 1rem 1rem;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .myContainer{
+    padding: 1rem 0.5rem;
+    display: flex;
+  }
+}
+
+input{
+    font-size: 12px !important;
+}
+
+.auth input { 
+  font-size:16px !important;
+}
+
+.MuiFormHelperText-root{
+    font-size: 9px !important;
+}
+
+.MuiInputAdornment-root > p{
+    font-size: 10px !important;
+}
+
