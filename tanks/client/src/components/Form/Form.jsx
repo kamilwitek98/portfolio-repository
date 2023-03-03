@@ -102,6 +102,7 @@ const Form = ({tank, changeIsEdit}) => {
       armorSide: '',
       armorBack: '',
     })
+    setIsError(false);
   }
 
   const textFieldStyles = {style: {fontSize: 12}}
