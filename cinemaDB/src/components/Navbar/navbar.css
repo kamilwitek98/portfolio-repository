@@ -1,0 +1,16 @@
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+div:has(> .dropdown-content:hover){
+    color: rgb(241 153 83 / var(--tw-text-opacity));
+}
+
+.dropdown-content a{
+    transition: 0.2s ease all;
+}
+
+.dropdownElems{
+    background: rgb(241,153,83);
+background: linear-gradient(270deg, rgba(241,153,83,1) 0%, rgba(0,0,0,0.7399334733893557) 50%);
+}

@@ -1,0 +1,13 @@
+.poster-shadow::after{
+    -webkit-box-shadow: inset 0px 0px 100px 50px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 100px 50px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 100px 50px rgba(0, 0, 0, 1);
+    content: '';
+    display: block;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scale(1.05 , 1.05);
+}

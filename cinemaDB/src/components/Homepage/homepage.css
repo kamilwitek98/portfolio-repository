@@ -1,0 +1,11 @@
+.gradient_top_to_down{
+    background: linear-gradient(180deg, rgba(0,0,0,0.7399334733893557) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 60%, rgba(0,0,0,0.896796218487395) 100%);
+}
+
+.text_shadow_black{
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+}
+
+.text_shadow_white{
+    text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.5);
+}

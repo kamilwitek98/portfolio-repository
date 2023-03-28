@@ -1,0 +1,22 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-areas: 
+    "image0 image0 image1 image2"
+    "image0 image0 image3 image3"
+    "image4 image5 image3 image3"; 
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
